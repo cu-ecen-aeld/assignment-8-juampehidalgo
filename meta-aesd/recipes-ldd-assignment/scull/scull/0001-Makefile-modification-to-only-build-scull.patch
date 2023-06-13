@@ -1,0 +1,29 @@
+From 6fac746d53d86d62eb22102984f205cc410d8bd3 Mon Sep 17 00:00:00 2001
+From: juampehidalgo <juanpedro.hidalgo@hotmail.com>
+Date: Thu, 8 Jun 2023 23:04:48 +0300
+Subject: [PATCH] Makefile modification to only build misc-modules and scull
+ drivers
+
+---
+ Makefile | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+diff --git a/Makefile b/Makefile
+index 7b08c49..014b0f2 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,8 +1,10 @@
+ 
+-SUBDIRS =  misc-progs misc-modules \
+-           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
+-	   pci usb\
+-	   sbull snull short
++#SUBDIRS =  misc-progs misc-modules \
++#           skull scull scullc scullp lddbus sculld scullv shortprint simple tty \
++#	   pci usb\
++#	   sbull snull short
++
++SUBDIRS = scull
+ 
+ all: subdirs
+ 
