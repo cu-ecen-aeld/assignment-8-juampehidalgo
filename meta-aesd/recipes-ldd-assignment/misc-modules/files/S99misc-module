@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Start/stop script to load/unload drivers as per the requirements of assignment 7, part 2
+
+do_load_faulty() {
+	/sbin/module_load faulty
+}
+
+do_unload_faulty() {
+	/sbin/module_unload faulty
+}
+
+case "$1" in
+	start)
+		do_load_faulty
+		;;
+	stop)
+		do_unload_faulty
+		;;
+	*)
+		echo "Usage: $0 {start|stop}"
+esac
+
+exit 0
+
