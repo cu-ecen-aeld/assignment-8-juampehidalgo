@@ -1,0 +1,22 @@
+From 7200c3c8e262d9d972f78bed3b6c92d47f0de7d0 Mon Sep 17 00:00:00 2001
+From: juampehidalgo <juanpedro.hidalgo@hotmail.com>
+Date: Tue, 20 Jun 2023 12:04:29 +0300
+Subject: [PATCH] Kernel modules are placed in the extra subfolder in Yocto
+
+---
+ aesd-char-driver/aesdchar.init | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/aesd-char-driver/aesdchar.init b/aesd-char-driver/aesdchar.init
+index 7ef4bf3..22f29ae 100755
+--- a/aesd-char-driver/aesdchar.init
++++ b/aesd-char-driver/aesdchar.init
+@@ -2,7 +2,7 @@
+ # Sample init script for the scull driver module <rubini@linux.it>
+ 
+ DEVICE="aesdchar"
+-SECTION="misc"
++SECTION="extra"
+ 
+ # The list of filenames and minor numbers: $PREFIX is prefixed to all names
+ PREFIX="aesdchar"

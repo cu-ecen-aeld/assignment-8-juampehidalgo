@@ -1,0 +1,25 @@
+#!/bin/sh
+
+# Start/stop script to load/unload drivers as per the requirements of assignment 7, part 2
+
+do_load_aesdchar () {
+	/sbin/aesdchar.init start
+}
+
+do_unload_aesdchar () {
+	/sbin/aesdchar.init stop
+}
+
+case "$1" in
+	start)
+		do_load_aesdchar
+		;;
+	stop)
+		do_unload_aesdchar
+		;;
+	*)
+		echo "Usage: $0 {start|stop}"
+esac
+
+exit 0
+

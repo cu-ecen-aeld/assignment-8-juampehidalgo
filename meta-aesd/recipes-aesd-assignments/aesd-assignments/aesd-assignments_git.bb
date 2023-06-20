@@ -3,7 +3,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
 # TODO: set to reference a specific commit hash in your assignment repo
-SRCREV = "46d23bd3fb1db0e762eebb733f0e02d13c15248c"
+SRCREV = "2faa1c943ed85af9ac3698bb93514e386002fe7d"
 PV = "1.0+git${SRCPV}"
 
 # TODO: Set this  with the path to your assignments rep.  Use ssh protocol and see lecture notes
